@@ -1,9 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdio.h>
-
+int _putchar(char c);
 void positive_or_negative(int i);
 int largest_number(int a, int b, int c);
 void print_remaining_days(int month, int day, int year);
+void print_to_98(int n);
 
 #endif /* MAIN_H */
