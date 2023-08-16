@@ -13,19 +13,19 @@ int main(void)
 	m = 2;
 
 	printf("%ld, %ld, ", n, m);
-	for (o = 2; o <= 48; o++)
+	for (o = 0; o < 49; o++)
 	{
 		p = n + m;
+	
 		printf("%ld, ", p);
-
 		n = m;
 		m = p;
 
 		if (o == 48)
 		{
-			printf("%ld", p);
+			printf("%ld\n", p);
 		}
+
 	}
-	printf("\n");
 	return (0);
 }
