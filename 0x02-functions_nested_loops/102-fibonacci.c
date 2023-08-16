@@ -1,31 +1,22 @@
 #include <stdio.h>
-#include <complex.h>
+
 /**
-* main - This is the main function where all the codes are written in
-* Return: zero(0)
+*main - print first 50 fibonacci
+*Return: 0 always.
 */
 
 int main(void)
 {
-	long int m, n, o, p;
+	long int i, x = 1, y = 2, sum = 0;
 
-	n = 1;
-	m = 2;
-
-	printf("%ld, %ld, ", n, m);
-	for (o = 0; o < 49; o++)
+	for (i = 0; i < 49; i++)
 	{
-		p = n + m;
-	
-		printf("%ld, ", p);
-		n = m;
-		m = p;
-
-		if (o == 48)
-		{
-			printf("%ld\n", p);
-		}
-
+		printf("%ld, ", x);
+		sum = x + y;
+		x = y;
+		y = sum;
+		if (i == 48)
+		printf("%ld\n", x);
 	}
 	return (0);
 }
