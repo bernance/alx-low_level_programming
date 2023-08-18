@@ -1,31 +1,34 @@
 #include <stdio.h>
 
 /**
-* main - This is the entry point of the code
-* Return: 0
+* main - prints Buzz each numbers of 3 and 5.
+* Return: Always 0.
 */
 
 int main(void)
 {
 	int m;
 
-	for (m = 1; m <= 100; m++)
+	m = 1;
+	printf("%d", m);
+	for (m = 2; m <= 100; m++)
 	{
-
-		if (m % 5 == 0 && m % 3 == 0)
+		if ((m % 3 == 0) && (m % 5 == 0))
 		{
-			printf("FizzBuzz ");
+			printf(" FizzBuzz");
 		}
 		else if (m % 3 == 0)
 		{
-			printf("Fizz ");
+			printf(" Fizz");
 		}
 		else if (m % 5 == 0)
 		{
-			printf("Buzz ");
+			printf(" Buzz");
 		}
 		else
-			printf("%d ", m);
+		{
+			printf(" %d", m);
+		}
 	}
 	printf("\n");
 	return (0);
