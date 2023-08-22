@@ -3,7 +3,7 @@
 
 /**
 * reset_to_98 - takes a pointer and update it's value to 98
-* @*n: this is the pointer t be updated
+* @n: this is the pointer t be updated
 * Return: 0
 */
 
