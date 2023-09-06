@@ -4,7 +4,7 @@
 
 /**
 * _strdup - A string thaat returns a pointer to a copy of a string
-* *str: the pointer of the string
+* @str: the pointer of the string
 * Return: Null or the pointer to the copy of the string
 */
 char *_strdup(char *str)
