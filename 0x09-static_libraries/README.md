@@ -1,1 +1,1 @@
-This is the readme file for Static libraries
+0x09. C - Static libraries
